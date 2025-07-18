@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/temperatureconverter.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Personal Profile</a></li>
+                <li><a href="marktograde.html">Mark to Grade</a></li>
+                <li><a href="staff.html">Staff</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Convert Temperature</h2>
+        <label for="temperature">Enter Temperature:</label>
+        <input id="temperature" type="number" placeholder="Enter a value" required>
+        <select id="temperature-unit">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <button onclick="convertTemperature()">Convert</button>
+        <p id="conversion-results" class="message"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ty Landry</p>
+    </footer>
+</body>
+</html>

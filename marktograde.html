@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark to Grade Converter</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="JavaScript/marktograde.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mark to Grade Converter</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Personal Profile</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="temperatureconverter.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Enter your mark below:</h2>
+        <input id="mark-input-box" type="number" placeholder="Enter mark (0-100)" required>
+        <button onclick="MarkToGrade()">Convert Grade</button>
+        <p id="validation-message" class="message"></p>
+        <p id="grade-result" class="message"></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ty Landry</p>
+    </footer>
+</body>
+</html>

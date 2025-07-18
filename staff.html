@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JavaScript/staff.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Staff Information</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Personal Profile</a></li>
+                <li><a href="marktograde.html">Mark to Grade</a></li>
+                <li><a href="temperatureconverter.html">Temperature Converter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table id="staff-table">
+            <thead>
+                <tr>
+                    <th onclick="sortStaff('name')">Name</th>
+                    <th>Position</th>
+                    <th>Location</th>
+                    <th>ID</th>
+                    <th>Start Date</th>
+                    <th onclick="sortStaff('salary')">Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Staff data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ty Landry</p>
+    </footer>
+</body>
+</html>
